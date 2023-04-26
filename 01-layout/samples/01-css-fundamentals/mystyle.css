@@ -1,0 +1,40 @@
+html {
+  height: 100vh;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  height: 75px;
+  background-color: cadetblue;
+}
+
+#content {
+  flex: 1;
+  background-color: chocolate;
+  display: flex;
+}
+
+footer {
+  height: 150px;
+  background-color: crimson;
+}
+
+nav {
+  width: 125px;
+  background-color: khaki;
+}
+
+main {
+  flex: 1;
+  background-color: aqua;
+}
+
+}
