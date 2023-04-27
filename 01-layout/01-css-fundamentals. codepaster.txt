@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./mystyle.css" />
+  </head>
+  <body>
+    <a title="Website" href="http://www.lemoncode.net">lemoncode</a>
+    <a title="Email" href="mailto:info@lemoncode.net">EMail</a>
+    <a href="file1.pdf">File PDF</a>
+    <a href="file2.txt">File TXT</a>
+    <div value="top topheader">
+      <p>TEST</p>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+[href] {
+  font-size: 125%;
+  padding: 8px;
+}
+
+[href*="lemoncode"] {
+  background-color: green;
+  color: white;
+}
+
+[href$=".pdf"] {
+  background-color: indianred;
+  color: white;
+}
+
+[href$=".txt"] {
+  background-color: darkblue;
+  color: white;
+}
+
+[title="Website"][href*="lemoncode"] {
+  font-size: 200%;
+}
+
+[value*="topheader"] {
+  background-color: yellow;
+}
+
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./mystyle.css" />
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <input type="text" />
+    <div class="container">
+      <div>First element</div>
+      <div>Second element</div>
+      <div>Third element</div>
+      <div>Fourth element</div>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+input {
+  padding: 15px;
+}
+
+input:hover {
+  background-color: darkred;
+}
+
+input:focus {
+  background-color: darkolivegreen;
+  color: white;
+}
+
+.container div:nth-child(odd) {
+  color: darkorange;
+}
+
+.container div:nth-child(even) {
+  color: darkgreen;
+}
+
+.container div:last-child {
+  color: red;
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./mystyle.css" />
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+      scelerisque turpis ac libero rutrum vestibulum. Donec aliquet semper lacus
+      eleifend facilisis. Donec elementum lacus lectus, vitae porttitor eros
+      lobortis eu. Proin mollis a arcu sed interdum. Vestibulum id hendrerit
+      eros. Nunc quis vehicula metus. Sed ac vehicula magna. Mauris ut gravida
+      diam. Curabitur semper consectetur libero, sed efficitur nisl molestie in.
+      Fusce at erat in felis eleifend suscipit non sit amet leo. In dapibus at
+      justo sed facilisis. Mauris placerat malesuada turpis vitae semper.
+      Integer vehicula dolor risus, a blandit nisi commodo sed. Aenean finibus
+      nunc non ultricies ultricies. Curabitur eu cursus dui, ut fermentum nibh.
+    </p>
+    <div class="myclass">Lemoncode</div>
+  </body>
+</html>
+
+*********************************
+ 
+p::first-letter {
+  font-size: 350%;
+}
+
+p::selection {
+  background-color: darkorange;
+  color: white;
+}
+
+p::after {
+  content: "...[More info]";
+  cursor: pointer;
+}
+
+div.myclass::before {
+  content: "@";
+  padding-right: 6px;
+  font-weight: bold;
+}
+
+*********************************
+ 
+  <body>
+    <h1>Heading 1</h1>
+    <input type="text" />
+    <div class="container">
+      <p>First element</p>
+      <p>Second element</p>
+    </div>
+    <div class="container2">
+      <p>Third element</p>
+      <p>Fourth element</p>
+    </div>
+  </body>
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./mystyle.css" />
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <input type="text" />
+    <section class="container">
+      <p>XXXXXX</p>
+      <p>XXXXXX</p>
+    </section>
+    <div class="container">
+      <section>
+        <p>First element</p>
+      </section>
+      <p>Second element</p>
+    </div>
+    <section class="container">
+      <p>Third element</p>
+      <p>Fourth element</p>
+    </section>
+    <section class="container">
+      <p>Fifth element</p>
+      <p>Sixth element</p>
+    </section>
+  </body>
+</html>
+
+*********************************
+ 
+div.container > p {
+  color: red;
+}
+
+div.container ~ section {
+  background-color: darkorange;
+}
+
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./mystyle.css" />
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <div>A div</div>
+    <div>
+      <p>A paragraph inside a div</p>
+    </div>
+    <p>Another paragraph</p>
+  </body>
+</html>
+
+*********************************
+ 
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@400&disp";
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+div p {
+  background-color: chocolate;
+}
+
+p {
+  background-color: green;
+  font-size: 40px;
+}
+
+p {
+  background-color: grey;
+}
+
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./mystyle.css" />
+  </head>
+  <body>
+    <div>
+        I'm the div :)
+        <p>
+          A paragraph inside a div
+          <em>emphasis</em>
+          <strong>strong</strong>
+        </p>
+      </div>
+  </body>
+</html>
+
+*********************************
+ 
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@400&disp";
+
+body {
+  border: 5px solid red;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+}
+
+div {
+  font-size: 40px;
+  border: inherit;
+  margin: 40px;
+}
+
+div p {
+  font-size: initial;
+}
+
+
+*********************************
+ 
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@400&disp";
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+}
+
+div {
+  font-size: 40px;
+  margin: 40px;
+  border: 5px solid red;
+  padding: 20px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+div p {
+  font-size: initial;
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./mystyle.css" />
+  </head>
+  <body>
+    <p>Hello, this <b>text</b> is important</p>
+    <p>Hello, this <b>text</b> is important</p>
+  </body>
+</html>
+
+*********************************
+ 
+p {
+  border: 1px solid black;
+  width: 50%;
+  display: block;
+}
+
+b {
+  width: 150px;
+  display: inline-block;
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./mystyle.css" />
+  </head>
+  <body>
+    <p>Positioning</p>
+    <div class="box"></div>
+    <div class="box" id="element"></div>
+    <div class="box"></div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      dignissim, ligula eu porta semper, mauris arcu volutpat est, ac consequat
+      dui lorem cursus odio. In ante quam, sagittis a volutpat in, porttitor vel
+      sapien. Nulla pharetra, elit vitae congue dictum, quam enim semper ipsum,
+      sit amet dictum sapien nisi at tellus. Fusce eleifend sapien tempor quam
+      iaculis, a luctus arcu consequat. In congue libero pulvinar augue
+      tincidunt lacinia. Aenean leo nulla, ultricies quis tellus eu, condimentum
+      laoreet augue. Etiam finibus tortor felis, vitae luctus tellus ornare
+      quis. Nullam eget eros erat. Curabitur at metus tempus, sodales quam a,
+      ullamcorper metus. Suspendisse varius magna nec tellus luctus, nec lacinia
+      quam tincidunt. Integer finibus dui id erat ullamcorper porta. Maecenas
+      erat tortor, mollis vel pulvinar et, imperdiet sit amet felis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      dignissim, ligula eu porta semper, mauris arcu volutpat est, ac consequat
+      dui lorem cursus odio. In ante quam, sagittis a volutpat in, porttitor vel
+      sapien. Nulla pharetra, elit vitae congue dictum, quam enim semper ipsum,
+      sit amet dictum sapien nisi at tellus. Fusce eleifend sapien tempor quam
+      iaculis, a luctus arcu consequat. In congue libero pulvinar augue
+      tincidunt lacinia. Aenean leo nulla, ultricies quis tellus eu, condimentum
+      laoreet augue. Etiam finibus tortor felis, vitae luctus tellus ornare
+      quis. Nullam eget eros erat. Curabitur at metus tempus, sodales quam a,
+      ullamcorper metus. Suspendisse varius magna nec tellus luctus, nec lacinia
+      quam tincidunt. Integer finibus dui id erat ullamcorper porta. Maecenas
+      erat tortor, mollis vel pulvinar et, imperdiet sit amet felis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      dignissim, ligula eu porta semper, mauris arcu volutpat est, ac consequat
+      dui lorem cursus odio. In ante quam, sagittis a volutpat in, porttitor vel
+      sapien. Nulla pharetra, elit vitae congue dictum, quam enim semper ipsum,
+      sit amet dictum sapien nisi at tellus. Fusce eleifend sapien tempor quam
+      iaculis, a luctus arcu consequat. In congue libero pulvinar augue
+      tincidunt lacinia. Aenean leo nulla, ultricies quis tellus eu, condimentum
+      laoreet augue. Etiam finibus tortor felis, vitae luctus tellus ornare
+      quis. Nullam eget eros erat. Curabitur at metus tempus, sodales quam a,
+      ullamcorper metus. Suspendisse varius magna nec tellus luctus, nec lacinia
+      quam tincidunt. Integer finibus dui id erat ullamcorper porta. Maecenas
+      erat tortor, mollis vel pulvinar et, imperdiet sit amet felis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      dignissim, ligula eu porta semper, mauris arcu volutpat est, ac consequat
+      dui lorem cursus odio. In ante quam, sagittis a volutpat in, porttitor vel
+      sapien. Nulla pharetra, elit vitae congue dictum, quam enim semper ipsum,
+      sit amet dictum sapien nisi at tellus. Fusce eleifend sapien tempor quam
+      iaculis, a luctus arcu consequat. In congue libero pulvinar augue
+      tincidunt lacinia. Aenean leo nulla, ultricies quis tellus eu, condimentum
+      laoreet augue. Etiam finibus tortor felis, vitae luctus tellus ornare
+      quis. Nullam eget eros erat. Curabitur at metus tempus, sodales quam a,
+      ullamcorper metus. Suspendisse varius magna nec tellus luctus, nec lacinia
+      quam tincidunt. Integer finibus dui id erat ullamcorper porta. Maecenas
+      erat tortor, mollis vel pulvinar et, imperdiet sit amet felis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      dignissim, ligula eu porta semper, mauris arcu volutpat est, ac consequat
+      dui lorem cursus odio. In ante quam, sagittis a volutpat in, porttitor vel
+      sapien. Nulla pharetra, elit vitae congue dictum, quam enim semper ipsum,
+      sit amet dictum sapien nisi at tellus. Fusce eleifend sapien tempor quam
+      iaculis, a luctus arcu consequat. In congue libero pulvinar augue
+      tincidunt lacinia. Aenean leo nulla, ultricies quis tellus eu, condimentum
+      laoreet augue. Etiam finibus tortor felis, vitae luctus tellus ornare
+      quis. Nullam eget eros erat. Curabitur at metus tempus, sodales quam a,
+      ullamcorper metus. Suspendisse varius magna nec tellus luctus, nec lacinia
+      quam tincidunt. Integer finibus dui id erat ullamcorper porta. Maecenas
+      erat tortor, mollis vel pulvinar et, imperdiet sit amet felis.
+    </p>
+  </body>
+</html>
+
+
+*********************************
+ 
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  background-color: lightblue;
+  border: 3px solid darkblue;
+}
+
+#element {
+  position: sticky;
+  top: 20px;
+  left: 80px;
+  background-color: darkorange;
+  border: 3px solid brown;
+}
+
+*********************************
+ 
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  background-color: lightblue;
+  border: 3px solid darkblue;
+}
+
+#element {
+  position: relative;
+  top: 0px;
+  left: 50px;
+  background-color: darkorange;
+  border: 3px solid brown;
+}
+
+#element2 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+*********************************

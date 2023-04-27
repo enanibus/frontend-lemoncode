@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./mystyle.css" />
+  </head>
+  <body>
+    <p>Positioning</p>
+    <div class="box"></div><div class="box" id="element"></div><div class="box" id="element2"></div>
+    <p id="test">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      dignissim, ligula eu porta semper, mauris arcu volutpat est, ac consequat
+      dui lorem cursus odio. In ante quam, sagittis a volutpat in, porttitor vel
+      sapien. Nulla pharetra, elit vitae congue dictum, quam enim semper ipsum,
+      sit amet dictum sapien nisi at tellus. Fusce eleifend sapien tempor quam
+      iaculis, a luctus arcu consequat. In congue libero pulvinar augue
+      tincidunt lacinia. Aenean leo nulla, ultricies quis tellus eu, condimentum
+      laoreet augue. Etiam finibus tortor felis, vitae luctus tellus ornare
+      quis. Nullam eget eros erat. Curabitur at metus tempus, sodales quam a,
+      ullamcorper metus. Suspendisse varius magna nec tellus luctus, nec lacinia
+      quam tincidunt. Integer finibus dui id erat ullamcorper porta. Maecenas
+      erat tortor, mollis vel pulvinar et, imperdiet sit amet felis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      dignissim, ligula eu porta semper, mauris arcu volutpat est, ac consequat
+      dui lorem cursus odio. In ante quam, sagittis a volutpat in, porttitor vel
+      sapien. Nulla pharetra, elit vitae congue dictum, quam enim semper ipsum,
+      sit amet dictum sapien nisi at tellus. Fusce eleifend sapien tempor quam
+      iaculis, a luctus arcu consequat. In congue libero pulvinar augue
+      tincidunt lacinia. Aenean leo nulla, ultricies quis tellus eu, condimentum
+      laoreet augue. Etiam finibus tortor felis, vitae luctus tellus ornare
+      quis. Nullam eget eros erat. Curabitur at metus tempus, sodales quam a,
+      ullamcorper metus. Suspendisse varius magna nec tellus luctus, nec lacinia
+      quam tincidunt. Integer finibus dui id erat ullamcorper porta. Maecenas
+      erat tortor, mollis vel pulvinar et, imperdiet sit amet felis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      dignissim, ligula eu porta semper, mauris arcu volutpat est, ac consequat
+      dui lorem cursus odio. In ante quam, sagittis a volutpat in, porttitor vel
+      sapien. Nulla pharetra, elit vitae congue dictum, quam enim semper ipsum,
+      sit amet dictum sapien nisi at tellus. Fusce eleifend sapien tempor quam
+      iaculis, a luctus arcu consequat. In congue libero pulvinar augue
+      tincidunt lacinia. Aenean leo nulla, ultricies quis tellus eu, condimentum
+      laoreet augue. Etiam finibus tortor felis, vitae luctus tellus ornare
+      quis. Nullam eget eros erat. Curabitur at metus tempus, sodales quam a,
+      ullamcorper metus. Suspendisse varius magna nec tellus luctus, nec lacinia
+      quam tincidunt. Integer finibus dui id erat ullamcorper porta. Maecenas
+      erat tortor, mollis vel pulvinar et, imperdiet sit amet felis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      dignissim, ligula eu porta semper, mauris arcu volutpat est, ac consequat
+      dui lorem cursus odio. In ante quam, sagittis a volutpat in, porttitor vel
+      sapien. Nulla pharetra, elit vitae congue dictum, quam enim semper ipsum,
+      sit amet dictum sapien nisi at tellus. Fusce eleifend sapien tempor quam
+      iaculis, a luctus arcu consequat. In congue libero pulvinar augue
+      tincidunt lacinia. Aenean leo nulla, ultricies quis tellus eu, condimentum
+      laoreet augue. Etiam finibus tortor felis, vitae luctus tellus ornare
+      quis. Nullam eget eros erat. Curabitur at metus tempus, sodales quam a,
+      ullamcorper metus. Suspendisse varius magna nec tellus luctus, nec lacinia
+      quam tincidunt. Integer finibus dui id erat ullamcorper porta. Maecenas
+      erat tortor, mollis vel pulvinar et, imperdiet sit amet felis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+      dignissim, ligula eu porta semper, mauris arcu volutpat est, ac consequat
+      dui lorem cursus odio. In ante quam, sagittis a volutpat in, porttitor vel
+      sapien. Nulla pharetra, elit vitae congue dictum, quam enim semper ipsum,
+      sit amet dictum sapien nisi at tellus. Fusce eleifend sapien tempor quam
+      iaculis, a luctus arcu consequat. In congue libero pulvinar augue
+      tincidunt lacinia. Aenean leo nulla, ultricies quis tellus eu, condimentum
+      laoreet augue. Etiam finibus tortor felis, vitae luctus tellus ornare
+      quis. Nullam eget eros erat. Curabitur at metus tempus, sodales quam a,
+      ullamcorper metus. Suspendisse varius magna nec tellus luctus, nec lacinia
+      quam tincidunt. Integer finibus dui id erat ullamcorper porta. Maecenas
+      erat tortor, mollis vel pulvinar et, imperdiet sit amet felis.
+    </p>
+  </body>
+</html>
+
+*********************************
+ 
+body {
+  font-size: 16px;
+}
+
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  background-color: lightblue;
+  border: 3px solid darkblue;
+}
+
+#test {
+  font-size: 1em;
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./mystyle.css" />
+  </head>
+  <body>
+    <p value="top-left top-right">hi!</p>
+  </body>
+</html>
+
+*********************************
+ 
+[value*="tt"] {
+  background-color: red;
+}
+
+[value~="tt"] {
+  background-color: yellow;
+}
+
+[value|="top"] {
+  background-color: green;
+}
+
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+   <div class="small-container">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+   </div>
+  </body>
+</html>
+
+
+*********************************
+ 
+
+.small-container {
+  width: 200px;
+  height: 600px;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://cdn.pixabay.com/photo/2020/04/13/13/27/animal-5038385_960_720.jpg"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu
+      fringilla neque, nec maximus magna. Integer facilisis ex massa, vel
+      iaculis erat finibus in. Nunc sapien justo, fringilla luctus risus
+      rhoncus, mollis aliquam est. Quisque cursus massa non arcu pulvinar
+      ultricies. Morbi eget quam et ante tempor congue. Phasellus ac tortor leo.
+      Suspendisse finibus rhoncus ipsum, at ultrices dui faucibus eget. Nunc
+      mauris lectus, mattis vel ex eget, maximus consectetur orci. Morbi nulla
+      est, pretium quis lobortis in, viverra a arcu. Vivamus vehicula nisl sed
+      quam elementum faucibus. Vestibulum semper tristique lectus. Proin congue
+      diam ut enim sagittis feugiat. Duis ornare tortor vel euismod accumsan.
+      Etiam eu mauris ac nisl iaculis cursus. Sed bibendum elit sit amet
+      suscipit sagittis. Nulla felis risus, auctor ut tellus pellentesque,
+      pellentesque sollicitudin lacus. In dignissim bibendum erat nec
+      pellentesque. Donec a ligula lacinia, laoreet tellus a, sagittis mauris.
+      pretium.
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+.container {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.container img {
+  float: left;
+  width: 245px;
+  margin: 5px;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="https://www.google.com">Google</a>
+        </li>
+        <li>
+          <a href="https://www.apple.es">Apple</a>
+        </li>
+      </ul>
+    </div>
+    <div class="content"></div>
+  </body>
+</html>
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="https://www.google.com">Google</a>
+        </li>
+        <li>
+          <a href="https://www.apple.es">Apple</a>
+        </li>
+      </ul>
+    </div>
+    <div class="content"></div>
+  </body>
+</html>
+
+*********************************
+ 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  float: left;
+  width: 150px;
+  height: 100vh;
+  background-color: cadetblue;
+  border-right: 1px solid black;
+  margin-right: 1px;
+}
+
+.content {
+  float: left;
+  height: 100vh;
+  background-color: bisque;
+  width: calc(100% - 150px);
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="my-flex-container">
+      <div class="menu"></div>
+      <div class="content"></div>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.my-flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu {
+  width: 150px;
+  background-color: cadetblue;
+  border: 5px solid black;
+  margin-right: 10px;
+}
+
+.content {
+  background-color: bisque;
+  flex-grow: 1;
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1>Element 1</h1>
+      </div>
+      <div>
+        <h1>Element 2</h1>
+      </div>
+      <div>
+        <h1>Element 3</h1>
+      </div>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.my-flex-container div:nth-child(1) {
+  background-color: darkmagenta;
+}
+
+.my-flex-container div:nth-child(2) {
+  background-color: darkolivegreen;
+}
+
+.my-flex-container div:nth-child(3) {
+  background-color: darkred;
+}
+
+.my-flex-container div {
+  padding: 5px;
+  color: white;
+}
+
+.my-flex-container {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid black;
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="my-flex-container">
+      <div>
+        <h1>Element 1</h1>
+      </div>
+      <div>
+        <h1>Element 2</h1>
+      </div>
+      <div>
+        <h1>Element 3</h1>
+      </div>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.my-flex-container div:nth-child(1) {
+  background-color: darkmagenta;
+}
+
+.my-flex-container div:nth-child(2) {
+  background-color: darkolivegreen;
+}
+
+.my-flex-container div:nth-child(3) {
+  background-color: darkred;
+}
+
+.my-flex-container div {
+  padding: 5px;
+  color: white;
+  width: 300px;
+}
+
+.my-flex-container {
+  display: flex;
+  border: 5px solid black;
+  flex-flow: row wrap;
+  row-gap: 10px;
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="my-flex-container">
+      <div>Some text: 123</div>
+      <div>Some text: 123456</div>
+      <div>Some text: 1236546546</div>
+      <div>Some text: 12365465465465</div>
+      <div>Some text: 123</div>
+      <div>Some text: 1234645654</div>
+      <div>Some text: 12</div>
+      <div>Some text: 123</div>
+      <div>Some text: 123</div>
+      <div>Some text: 123645065406540650</div>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="flex-container">
+      <div class="box" id="box1">BOX 1</div>
+      <div class="box" id="box2">BOX 2</div>
+      <div class="box" id="box3">BOX 3</div>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="flex-container">
+      <div class="box" id="box1"><h1>BOX 1</h1></div>
+      <div class="box" id="box2"><h3>BOX 2</h3></div>
+      <div class="box" id="box3">BOX 3</div>
+      <div class="box" id="box4">BOX 4</div>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#flex-container {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid black;
+  height: 100vh;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.box {
+  border: 1px solid black;
+  background-color: cadetblue;
+  padding: 30px;
+  width: 300px;
+}
+
+#box1 {
+  padding-bottom: 70px;
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="flex-container">
+      <div class="box" id="box1"><h1>BOX 1</h1></div>
+      <div class="box" id="box2"><h3>BOX 2</h3></div>
+      <div class="box" id="box3">BOX 3</div>
+      <div class="box" id="box4">BOX 4</div>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#flex-container {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid black;
+  height: 100vh;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: 1px solid black;
+  background-color: cadetblue;
+  padding: 30px;
+  width: 300px;
+}
+
+#box4 {
+  order: -1;
+}
+
+#box1 {
+  order: 4;
+  padding-bottom: 70px;
+}
+
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="flex-container">
+      <div class="box" id="box1">BOX 1</div>
+      <div class="box" id="box2">BOX 2</div>
+      <div class="box" id="box3">BOX 3</div>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#flex-container {
+  border: 3px solid red;
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  padding: 50px;
+  border: 1px solid black;
+}
+
+#box1 {
+  flex: 1;
+}
+
+#box2 {
+  flex: 3;
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>Mi cabecera</header>
+    <div id="content">
+      <nav id="menu"></nav>
+      <main></main>
+    </div>
+    <footer>Footer</footer>
+  </body>
+</html>
+
+
+*********************************
+ 
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  height: 75px;
+  background-color: cadetblue;
+}
+
+#content {
+  flex: 1;
+  background-color: chocolate;
+  display: flex;
+}
+
+footer {
+  height: 150px;
+  background-color: crimson;
+}
+
+nav {
+  width: 125px;
+  background-color: khaki;
+}
+
+main {
+  flex: 1;
+  background-color: aqua;
+}
+
+*********************************
