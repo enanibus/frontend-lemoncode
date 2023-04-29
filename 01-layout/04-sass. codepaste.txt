@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle2.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <body>
+      <div class="grid-container">
+        <div class="item">Esto</div>
+        <div class="item">Es una prueba de</div>
+        <div class="item">Como se comporta el auto</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+      </div>
+    </body>
+  </body>
+</html>
+
+*********************************
+ 
+.grid-container {
+  display: grid;
+  border: 1px solid black;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.item {
+  border: 1px solid black;
+  background-color: khaki;
+  display: flex;
+  justify-content: center;
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <body>
+      <div class="grid-container">
+        <header>Logo App</header>
+        <nav>Menu</nav>
+        <main>Main Menu</main>
+        <footer>Footer</footer>
+        <div>Test</div>
+      </div>
+    </body>
+  </body>
+</html>
+
+*********************************
+ 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 150px 25px 1fr;
+  grid-template-rows: 100px 1fr 100px;
+}
+
+header {
+  background: indianred;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+main {
+  background: skyblue;
+  grid-column: 3 / -1;
+  grid-row: 2 / 3;
+}
+
+nav {
+  background: goldenrod;
+}
+
+footer {
+  background: blue;
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <body>
+      <div class="grid-container">
+        <img src="./landscape-a.jpg" />
+        <img src="./landscape-b.jpg" />
+        <img src="./landscape-c.jpg" />
+        <img src="./landscape-d.jpg" />
+      </div>
+    </body>
+  </body>
+</html>
+
+*********************************
+ 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+  justify-content: space-around;
+  overflow: auto;
+}
+
+.grid-container > img {
+  width: 100%;
+}
+
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <body>
+      <header>CSS Training</header>
+      <div class="grid-container">
+        <div class="item">1</div>
+        <div class="item item-2">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+      </div>
+    </body>
+  </body>
+</html>
+
+
+*********************************
+ 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  background-color: darkslategrey;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  flex-grow: 1;
+}
+
+header {
+  height: 150px;
+  background-color: indianred;
+  padding: 25px;
+  font-size: 150%;
+}
+.item {
+  background-color: khaki;
+  padding: 25px;
+}
+
+@media screen and (max-width: 450px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+  }
+
+  header {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 650px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  header {
+    height: initial;
+  }
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>Logo App</header>
+      <nav>Menu</nav>
+      <main>Main Menu</main>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 150px 25px 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    "header header header"
+    "menu . body"
+    "footer footer footer";
+}
+
+header {
+  background: indianred;
+  grid-area: header;
+}
+
+main {
+  background: skyblue;
+  grid-area: body;
+}
+
+nav {
+  background: goldenrod;
+  grid-area: menu;
+}
+
+footer {
+  background: blue;
+  grid-area: footer;
+}
+
+@media screen and (max-width: 650px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "menu body"
+      "footer footer";
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 250px 1fr 100px;
+    grid-template-areas:
+      "header"
+      "menu"
+      "body"
+      "footer";
+  }
+}
+
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css" />
+  </head>
+  <body>
+    <header>HTML Training</header>
+    <main>
+      Hello Lemoncoders!
+      <div class="card">Hi, I'm the card</div>
+    </main>
+    <div class="card">Hi I'm the card</div>
+  </body>
+</html>
+
+
+*********************************
+ 
+body {
+  font-family: sans-serif;
+}
+
+html {
+}
+
+header {
+  --primary-color: darkorange;
+  background-color: var(--primary-color);
+  padding: 25px;
+}
+
+main {
+  --primary-color: green;
+  color: var(--primary-color);
+  font-size: 125%;
+  margin: 25px;
+}
+
+.card {
+  border: 2px solid var(--primary-color, red);
+  padding: 15px;
+  border-radius: 8px;
+  color: var(--primary-color, red);
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.scss" />
+  </head>
+  <body>
+    <div class="container">
+      <p>HTML Training</p>
+      <main>
+        <p>Hello Lemoncoders</p>
+      </main>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+div.container {
+  padding: 15px;
+  border: 1px solid black;
+
+  p {
+    font-size: 125%;
+  }
+
+  & > p {
+    font-style: italic;
+    font-weight: bold;
+  }
+}
+
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.scss" />
+  </head>
+  <body>
+    <div class="container">
+      <p>HTML Training 2</p>
+      <main>
+        <p>Hello Lemoncoders</p>
+      </main>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+div.container {
+  padding: 15px;
+  border: 1px solid black;
+
+  p {
+    font-size: 125%;
+  }
+
+  & > p {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  &:hover {
+    background-color: khaki;
+  }
+}
+
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.scss" />
+  </head>
+  <body>
+    <div class="container-a">
+      <p>Container A paragraph</p>
+    </div>
+    <div class="container-b">
+      <p>Container B paragraph</p>
+    </div>
+    <a>This is a link</a>
+  </body>
+</html>
+
+*********************************
+ 
+$primary-color: darkorange;
+$secondary-color: skyblue;
+$text-color: darkblue;
+$font-base-size: 1.3em;
+$link-font-size: 1.5em;
+$breakpoint-sm: 600px;
+
+p {
+  .container-a & {
+    font-size: $font-base-size;
+    background-color: $primary-color;
+    color: $text-color;
+  }
+
+  .container-b & {
+    background-color: $secondary-color;
+    color: $text-color;
+  }
+}
+
+a {
+  font: {
+    size: $link-font-size;
+    weight: bold;
+  }
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  p {
+    font-size: 30px;
+  }
+}
+
+
+*********************************
+ 
+@use "base" as *;
+
+p {
+  .container-a & {
+    font-size: $font-base-size * 1.2;
+    background-color: $primary-color;
+    color: $text-color;
+  }
+
+  .container-b & {
+    background-color: $secondary-color;
+    color: $text-color;
+  }
+}
+
+a {
+  font: {
+    size: $link-font-size;
+    weight: bold;
+  }
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  p {
+    font-size: 30px;
+  }
+}
+
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.scss" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+@use "base" as *;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(2, 200px);
+
+  .item:nth-child(1) {
+    background-color: lighten($color: $grid-item-base-color, $amount: 50%);
+  }
+
+  .item:nth-child(2) {
+    background-color: darken($color: $grid-item-base-color, $amount: 50%);
+  }
+
+  .item:nth-child(3) {
+    background-color: saturate($color: $grid-item-base-color, $amount: 50%);
+  }
+
+  .item:nth-child(4) {
+    background-color: desaturate($color: $grid-item-base-color, $amount: 50%);
+  }
+
+  .item:nth-child(5) {
+    background-color: fade-in($color: $grid-item-base-color, $amount: 0.5);
+  }
+
+  .item:nth-child(6) {
+    background-color: fade-out($color: $grid-item-base-color, $amount: 0.5);
+  }
+
+  .item:nth-child(7) {
+    background-color: invert($color: $grid-item-base-color);
+  }
+
+  .item:nth-child(8) {
+    background-color: complement($color: $grid-item-base-color);
+  }
+
+  @media screen and (min-width: 800px) {
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 200px);
+  }
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(4, 200px);
+  }
+
+  @media screen and (max-width: 400px) {
+    grid-template-columns: repeat(1, 200px);
+    grid-template-rows: repeat(8, 200px);
+  }
+}
+
+
+*********************************

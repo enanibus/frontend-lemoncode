@@ -1,0 +1,613 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle2.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="my-flex-container">
+      <div>
+        <h1>Element 1</h1>
+      </div>
+      <div>
+        <h1>Element 2</h1>
+      </div>
+      <div>
+        <h1>Element 3</h1>
+      </div>
+      <p id="test">
+        <span>1</span>
+      </p>
+    </div>
+  </body>
+</html>
+
+*********************************
+
+.my-flex-container :nth-child(1) {
+  background-color: darkmagenta;
+}
+
+#test :nth-child(2) {
+  background-color: yellow;
+}
+
+
+*********************************
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>Mi cabecera</header>
+    <div id="content">
+      <nav id="menu"></nav>
+      <main>
+        <img src="./landscape-a.jpg" />
+        <img src="./landscape-b.jpg" />
+        <img src="./landscape-c.jpg" />
+        <img src="./landscape-d.jpg" />
+        <img src="./landscape-e.jpg" />
+        <img src="./landscape-f.jpg" />
+        <img src="./landscape-g.jpg" />
+        <img src="./landscape-h.jpg" />
+      </main>
+    </div>
+    <footer>Footer</footer>
+  </body>
+</html>
+
+*********************************
+
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  height: 75px;
+  background-color: cadetblue;
+}
+
+#content {
+  flex: 1;
+  background-color: chocolate;
+  display: flex;
+}
+
+footer {
+  height: 150px;
+  background-color: crimson;
+}
+
+nav {
+  width: 125px;
+  background-color: khaki;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  background-color: aqua;
+  align-items: center;
+  overflow: auto;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  align-content: center;
+}
+
+img {
+  width: 150px;
+}
+
+
+*********************************
+
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  height: 75px;
+  background-color: cadetblue;
+}
+
+#content {
+  flex: 1;
+  background-color: chocolate;
+  display: flex;
+}
+
+footer {
+  height: 150px;
+  background-color: crimson;
+}
+
+nav {
+  width: 125px;
+  background-color: khaki;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  background-color: aqua;
+  align-items: center;
+  overflow: auto;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  align-content: center;
+}
+
+img {
+  width: 150px;
+}
+
+
+*********************************
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>
+
+*********************************
+
+.grid-container {
+  display: grid;
+}
+
+
+*********************************
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item">Esto</div>
+      <div class="item">Es una prueba de</div>
+      <div class="item">Como se comporta el auto</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>
+
+*********************************
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  border: 1px solid red;
+}
+
+.item {
+  border: 1px solid black;
+  background-color: khaki;
+  display: flex;
+  justify-content: center;
+}
+
+*********************************
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>
+
+
+*********************************
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  border: 1px solid black;
+  grid-template-rows: [row1-start]100px[row1-end row2-start]100px[lastline];
+  grid-template-columns: [first]1fr[line2]2fr[line3]1fr[end];
+}
+
+.item {
+  border: 1px solid black;
+  background-color: khaki;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+*********************************
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item" id="item1">1</div>
+      <div class="item" id="item2">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>
+
+
+*********************************
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  border: 1px solid black;
+  grid-template-rows: [row1-start]100px[row1-end row2-start]100px[lastline];
+  grid-template-columns: [first]1fr[line2]2fr 1fr[line3]1fr[end];
+}
+
+.item {
+  border: 1px solid black;
+  background-color: khaki;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#item1 {
+  grid-column: first / -1;
+  grid-row: 1 / 2;
+  z-index: 9999;
+}
+
+#item2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+*********************************
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item" id="item1">1</div>
+      <div class="item" id="item2">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+    </div>
+  </body>
+</html>
+
+*********************************
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  border: 5px solid indianred;
+  grid-template-rows: repeat(2, 100px);
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.item {
+  border: 1px solid black;
+  background-color: khaki;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+*********************************
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>Logo App</header>
+      <nav>Menu</nav>
+      <main>Main menu</main>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 25px 150px;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    "menu menu menu"
+    "body body body"
+    "pie pie pie";
+}
+
+header {
+  background-color: indianred;
+}
+
+main {
+  background-color: skyblue;
+  grid-area: body;
+}
+
+nav {
+  background-color: goldenrod;
+  grid-area: menu;
+}
+
+footer {
+  background-color: blue;
+  grid-area: pie;
+}
+
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+body {
+  margin: 0;
+  padding: 0;
+}
+.grid-container {
+  display: inline-grid;
+  border: 1px solid blue;
+  grid-template-columns: repeat(3, 100px);
+  grid-auto-rows: 100px;
+  gap: 15px;
+}
+.item {
+  border: 1px solid black;
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="center-container grid-container">
+      <div class="item">1</div>
+      <div class="item" id="item2">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>
+
+
+*********************************
+ 
+body {
+  background-color: darkslategrey;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.center-container {
+  position: relative;
+  background-color: white;
+  width: 80vw;
+  height: 80vh;
+  left: 10vw;
+  top: 5vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  border: 1px solid black;
+  justify-items: center;
+}
+
+.item {
+  border: 1px solid black;
+  background-color: khaki;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#item2 {
+  justify-self: start;
+}
+
+*********************************
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./mystyle.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="center-container grid-container">
+      <div class="item">1</div>
+      <div class="item" id="item2">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>
+
+*********************************
+ 
+body {
+  background-color: darkslategrey;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.center-container {
+  position: relative;
+  background-color: white;
+  width: 80vw;
+  height: 80vh;
+  left: 10vw;
+  top: 5vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  border: 1px solid black;
+  place-items: center center;
+}
+
+.item {
+  border: 1px solid black;
+  background-color: khaki;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#item2 {
+}
+
+*********************************

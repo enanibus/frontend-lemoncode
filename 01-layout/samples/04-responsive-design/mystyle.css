@@ -1,0 +1,17 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.grid-container {
+  flex-grow: 1;
+  display: grid;
+  background-color: darkslategrey;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}

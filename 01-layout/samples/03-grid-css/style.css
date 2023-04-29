@@ -1,45 +1,5 @@
-body {
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-}
-
-header {
-  height: 75px;
-  background-color: cadetblue;
-}
-
-main {
-  flex: 1;
-  background-color: chocolate;
-  display: flex;
-  flex-direction: row;
-}
-
-footer {
-  height: 150px;
-  background-color: crimson;
-}
-
-.menu {
-  background-color: khaki;
-  width: 150px;
-}
-
-.content {
-  background-color: blueviolet;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  overflow: auto;
-  flex-wrap: wrap;
-  gap: 5px;
-  justify-content: center;
-  align-content: center;
-}
-
-img {
-  width: 150px;
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 300px;
+  grid-template-rows: 100px 100px;
 }
