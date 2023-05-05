@@ -1,0 +1,71 @@
+@use "base" as *;
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+@for $i from 1 through 3 {
+
+    .container-#{$i} {
+        margin: 10px;
+        width: 1000px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        & .box {
+            box-sizing: border-box;
+            font-family: Arial;
+            background-color: background-color($i);
+            height: 100px;
+            width: 100px;
+            flex-grow: 1;
+            border-radius: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & .darken-4 {
+            background-color: darken(background-color($i), $amount: 20%);
+        }
+
+        & .darken-3 {
+            background-color: darken(background-color($i), $amount: 15%);
+        }
+
+        & .darken-2 {
+            background-color: darken(background-color($i), $amount: 10%);
+        }
+
+        & .darken-1 {
+            background-color: darken(background-color($i), $amount: 5%);
+        }
+
+        & .lighten-4 {
+            background-color: lighten(background-color($i), $amount: 20%);
+        }
+
+        & .lighten-3 {
+            background-color: lighten(background-color($i), $amount: 15%);
+        }
+
+        & .lighten-2 {
+            background-color: lighten(background-color($i), $amount: 10%);
+        }
+
+        & .lighten-1 {
+            background-color: lighten(background-color($i), $amount: 5%);
+        }
+
+        .base-color {
+            width: 150px;;
+        }
+
+        .color-box-text {
+            color: white;
+        }
+    }
+}

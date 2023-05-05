@@ -1,0 +1,15 @@
+$primary-color: red;
+$secondary-color: blue;
+$tertiary-color: green;
+$default-color: $primary-color;
+
+@function background-color($index-color) {
+    @if $index-color == 1 {
+        @return $primary-color;
+    } @else if $index-color == 2 {
+        @return $secondary-color; 
+    } @else if $index-color == 3 {
+        @return $tertiary-color; 
+    }
+    @return $default-color;
+}
