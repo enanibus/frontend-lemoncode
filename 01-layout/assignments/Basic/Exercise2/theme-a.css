@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .my-flex-container div:nth-child(1) {
+    background-color: red;
+
+  }
+  
+  .my-flex-container div:nth-child(2) {
+    background-color: darkolivegreen;
+  }
+  
+  .my-flex-container div:nth-child(3) {
+    background-color: darkred;
+  }
+
+  .my-flex-container div:nth-child(4) {
+    background-color: darkmagenta;
+  }
+  
+  .my-flex-container div:nth-child(5) {
+    background-color: darkolivegreen;
+  }
+  
+  .my-flex-container div:nth-child(6) {
+    background-color: darkred;
+  }
+  
+  .my-flex-container div {
+    padding: 5px;
+    color: white;
+    width: 300px;
+  }
+  
+  .my-flex-container {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 1px;
+  }
