@@ -1,0 +1,66 @@
+body {
+  font-family: Monaco;
+  margin: 0;
+  padding: 0;
+}
+
+.my-flex-container div {
+  color: black;
+  margin-left: 10px;
+  border-radius: 5%;
+}
+
+.my-flex-container {
+  flex-direction: column;
+}
+
+.first {
+  background-color: rgb(34, 0, 255);
+  width: 100px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(166, 166, 166);
+}
+
+.second {
+  background-color: rgba(10, 6, 66, 0.975);
+  width: 100px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(166, 166, 166);
+}
+
+.third {
+  background-color: rgb(22, 211, 232);
+  width: 100px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(166, 166, 166);
+}
+
+.fourth {
+  margin-block: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.fifth {
+  margin-block: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.sixth {
+  background-color: white;
+  width: 100px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(166, 166, 166);
+  box-shadow: 10px 10px 10px #272727;
+}
