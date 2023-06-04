@@ -22,7 +22,7 @@ div {
   flex-wrap: wrap;
   justify-content: space-around;
 
-  & > .menu {
+  & > .navItem {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +33,7 @@ div {
     }
   }
 
-  & > .menu:hover {
+  & > .navItem:hover {
     background-color: $background-hover-color;
   }
 
