@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: Tahoma, sans-serif;
+}
+
+.grid-container {
+  font-size: large;
+  display: grid;
+  gap: 5px;
+
+  & > * {
+    padding: 0 5px 0 5px;
+    margin: 20px;
+  }
+
+  > header {
+    background: no-repeat center center url("boat.jpeg");
+    background-size: cover;
+    height: 20em;
+    width: 1fr;
+  }
+
+  > .title {
+    font-size: xx-large;
+    font-weight: normal;
+  }
+
+  > .published {
+    justify-self: right;
+    > .published-date {
+      color: green;
+    }
+  }
+
+  > .button {
+    margin: 20px;
+    height: 3em;
+    border: 1px solid lightgreen;
+    border-radius: 0px;
+    background-color: green;
+    color: white;
+    font-size: x-large;
+  }
+}
