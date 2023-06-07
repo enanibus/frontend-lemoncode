@@ -1,3 +1,63 @@
 @import 'theme-b.css';
-/* @import 'theme-b.css'; */
+/* @import 'theme-a.css'; */
 
+body {
+    font-family: Monaco;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .my-flex-container div {
+    color: black;
+    margin-left: 10px;
+  }
+  
+  .my-flex-container {
+    flex-direction: column;
+  }
+  
+  .first {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(166, 166, 166);
+  }
+  
+  .second {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(166, 166, 166);
+  }
+  
+  .third {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(166, 166, 166);
+  }
+  
+  .fourth {
+    margin-block: 10px;
+  }
+  
+  .fifth {
+    margin-block: 10px;
+  }
+  
+  .sixth {
+    background-color: white;
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(166, 166, 166);
+  }
+  

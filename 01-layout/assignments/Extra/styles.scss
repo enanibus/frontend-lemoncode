@@ -1,0 +1,178 @@
+/* reset */
+@import url("https://unpkg.com/ress/dist/ress.min.css");
+
+/* scss vars */
+$mq-md: 768px;
+
+/* tokens */
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-green: #cddf1b;
+    --color-yellow: #f9fbe3;
+    --color-grey: #f1f1f1;
+    --color-dark-green: #393e06;
+    --color-dark-yellow: #e8ead6;
+
+    --font-size-header: 20px; //3vh;
+    --font-size-title: 18px; //2vh;
+    --font-size-regular: 12px; //2.2vh;
+}
+
+/* common */
+input {
+    border: 1px solid var(--color-black);
+    border-radius: 2px;
+    padding: 5px;
+}
+
+/* style */
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: var(--font-size-regular);
+    height: 100vh;
+}
+
+header {
+    .page-title {
+        background-color: var(--color-green);
+        color: var(--color-white);
+        font-size: var(--font-size-header);
+        padding: 10px;
+    }
+    .toolbar {
+        display: none;
+
+        @media screen and (min-width: $mq-md) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+            position: sticky;
+
+            div {
+                align-self: center;
+            }
+        }
+    }
+}
+
+.page-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+    @media screen and (min-width: $mq-md) {
+        overflow-y: auto;
+        flex-direction: row;
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        .menu-container {
+            background-color: var(--color-dark-green);
+            min-width: 150px;
+            padding: 10px;
+            @media screen and (min-width: $mq-md) {
+                padding: 0;
+            }
+
+            .menu-title {
+                display: none;
+                @media screen and (min-width: $mq-md) {
+                    display: block;
+                    text-transform: uppercase;
+                    background-color: var(--color-dark-green);
+                    color: var(--color-white);
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                @media screen and (min-width: $mq-md) {
+                    flex-direction: column;
+                    gap: 0;
+                }
+            }
+
+            li {
+                flex: 1;
+                display: block;
+                padding: 5px;
+                background-color: var(--color-yellow);
+                border: 1px solid var(--color-grey);
+                text-align: center;
+                @media screen and (min-width: $mq-md) {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    main {
+        flex: 1;
+        background-color: var(--color-grey);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        @media screen and (min-width: $mq-md) {
+            overflow-y: auto;
+        }
+
+        .list {
+            display: inline-flex;
+            flex-direction: column;
+            gap: 10px;
+            align-content: stretch;
+            
+            @media screen and (min-width: $mq-md) {
+                flex-direction: row;
+                flex-wrap: wrap;
+                overflow-y: scroll;
+                justify-content: center;
+                align-content: flex-start;
+            }
+
+            .card {
+                flex: 1;
+                border: 1px solid black;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                padding: 10px;
+                background-color: var(--color-white);
+                
+
+                @media screen and (min-width: $mq-md) {
+                    flex-direction: column;
+                    flex-grow: 0;
+                    border: 1px solid black;
+                    border-radius: 3px;
+                }
+                img {
+                    border-radius: 50%;
+                }
+
+                div {
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding: 10px;
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+}

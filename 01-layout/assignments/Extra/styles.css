@@ -1,0 +1,174 @@
+/* reset */
+@import url("https://unpkg.com/ress/dist/ress.min.css");
+/* scss vars */
+/* tokens */
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-green: #cddf1b;
+  --color-yellow: #f9fbe3;
+  --color-grey: #f1f1f1;
+  --color-dark-green: #393e06;
+  --color-dark-yellow: #e8ead6;
+  --font-size-header: 20px;
+  --font-size-title: 18px;
+  --font-size-regular: 12px;
+}
+
+/* common */
+input {
+  border: 1px solid var(--color-black);
+  border-radius: 2px;
+  padding: 5px;
+}
+
+/* style */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: var(--font-size-regular);
+  height: 100vh;
+}
+
+header .page-title {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-size: var(--font-size-header);
+  padding: 10px;
+}
+header .toolbar {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header .toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+  }
+  header .toolbar div {
+    align-self: center;
+  }
+}
+
+.page-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .page-container {
+    overflow-y: auto;
+    flex-direction: row;
+  }
+}
+.page-container nav {
+  position: sticky;
+  top: 0;
+}
+.page-container nav .menu-container {
+  background-color: var(--color-dark-green);
+  min-width: 150px;
+  padding: 10px;
+}
+@media screen and (min-width: 768px) {
+  .page-container nav .menu-container {
+    padding: 0;
+  }
+}
+.page-container nav .menu-container .menu-title {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .page-container nav .menu-container .menu-title {
+    display: block;
+    text-transform: uppercase;
+    background-color: var(--color-dark-green);
+    color: var(--color-white);
+    padding: 10px;
+    text-align: center;
+  }
+}
+.page-container nav .menu-container ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  .page-container nav .menu-container ul {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.page-container nav .menu-container li {
+  flex: 1;
+  display: block;
+  padding: 5px;
+  background-color: var(--color-yellow);
+  border: 1px solid var(--color-grey);
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .page-container nav .menu-container li {
+    text-align: left;
+  }
+}
+.page-container main {
+  flex: 1;
+  background-color: var(--color-grey);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+@media screen and (min-width: 768px) {
+  .page-container main {
+    overflow-y: auto;
+  }
+}
+.page-container main .list {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  align-content: stretch;
+}
+@media screen and (min-width: 768px) {
+  .page-container main .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    justify-content: center;
+    align-content: flex-start;
+  }
+}
+.page-container main .list .card {
+  flex: 1;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  background-color: var(--color-white);
+}
+@media screen and (min-width: 768px) {
+  .page-container main .list .card {
+    flex-direction: column;
+    flex-grow: 0;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+}
+.page-container main .list .card img {
+  border-radius: 50%;
+}
+.page-container main .list .card div {
+  align-self: center;
+}
+
+footer {
+  padding: 10px;
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+}/*# sourceMappingURL=styles.css.map */
